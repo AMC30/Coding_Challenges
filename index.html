@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  <title>Interior Consultant Page</title>
+</head>
+<body class="bg-gray-800">
+    <nav>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+              <div class="flex-shrink-0 border-2 border-white-600 p-2">
+                <h1 class="text-white font-serif">THIS INTERIOR</h1>
+              </div>
+              <div class="hidden md:block ml-auto">
+                <ul class="ml-10 flex items-baseline space-x-4">
+                  <li><a href="#" class="text-white hover:text-gray-300 font-sans">Home</a></li>
+                  <li><a href="#" class="text-white hover:text-gray-300 font-sans">Collection</a></li>
+                  <li><a href="#" class="text-white hover:text-gray-300 font-sans">About</a></li>
+                  <li><a href="#" class="text-white hover:text-gray-300 font-sans">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="block md:hidden">
+                <button class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-gray-200 hover:border-gray-200">
+                  <!-- Mobile Menu Icon -->
+                  <svg class="h-3 w-3" fill="none" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M1 4h10M1 6h10M1 8h10"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+        </div>
+      
+        <!-- This is the Mobile menu -->
+        <div class="hidden md:hidden">
+            <ul class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <li><a href="#" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:text-gray-300 font-sans">Home</a></li>
+              <li><a href="#" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:text-gray-300 font-sans">About</a></li>
+              <li><a href="#" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:text-gray-300 font-sans">Services</a></li>
+              <li><a href="#" class="text-white block px-3 py-2 rounded-md text-base font-medium hover:text-gray-300 font-sans">Contact</a></li>
+            </ul>
+          </div>
+      </nav>
+      <div class="md:flex md:flex-row md:items-center md:w-screen md:h-screen">
+        <div class="text-white md:w-1/3 md:h-96 md:p-4 md:items-center">
+            <div class="text-4xl p-4 font-serif"><h1>Modern Interior</h1></div>
+            <div class="text-xl p-4 font-sans">
+                <p>A full service residential & <br>
+                    commercial interior design and <br>
+                    staging company offering <br>
+                    professional organizing & <br>
+                    eco-services.</p>
+            </div>
+            <div class="p-4 text-sm font-sans">Read more</div>
+        </div>
+        <div class="relative w-96 h-96 md:w-2/3 md:h-full">
+        <div class="md:w-5/6 md:h-full">
+            <img src="photo1.png" class="md:object-contain md:h-full md:w-full">
+        </div>
+        <div class="flex flex-col absolute bottom-0 left-1/2 right-1/2 -translate-x-8 bg-gray-800 w-1/2 h-1/2 md:w-1/4 md:h-32">
+            <div class="flex w-full md:h-1/2">
+                <div class="rounded-full overflow-hidden w-1/4 h-15 m-2">
+                    <img src="photo2.png" class="h-full w-full object-cover">
+                </div>
+                <div class="w-3/4 p-2 text-white font-sans text-base">
+                <h2>Allysa Webber</h2>
+                <h3 class="text-xs">Interior designer</h3>
+                </div>
+            </div>
+            <div class="w-full p-2 text-white text-lg md:h-1/2 font-serif"><h1>Designed in 2020 by <br> Allysa Webber</h1></div>
+        </div>
+       </div>
+      </div>
+      <footer class="text-white m-2 text-center">Designed by Chiamaka</footer>
+</body>
+</html>
